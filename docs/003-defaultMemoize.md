@@ -1,6 +1,11 @@
 # defaultMemoize
 - defaultMemoize(func, equalityCheck = defaultEqualityCheck)
 
+## human
+1. 这个函数实际上是 reselect 提供的 Memoize 函数
+2. 参数列表，不用在意(实际上并不是这么调用的)
+3. 你可以理理为，他是一这函数，你不用去调用他，但可以用其它的东西替换掉他。如：lodash.memoize
+
 ## desc
 > defaultMemoize can be used with createSelectorCreator to customize the equalityCheck function.
 
