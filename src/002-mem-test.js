@@ -5,6 +5,9 @@ const {
   createSelector
 } = require('reselect');
 
+const memoize = require('lodash.memoize');
+// const mySelecotr = createSelectorCreator(memoize, );
+
 const exampleState = {
   shop: {
     taxPercent: 8,

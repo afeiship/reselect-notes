@@ -114,3 +114,8 @@ const VisibleTodoList = connect(
 
 export default VisibleTodoList
 ```
+
+
+## re
+- https://blog.csdn.net/weixin_33937778/article/details/88001505
+- https://github.com/reduxjs/reselect
