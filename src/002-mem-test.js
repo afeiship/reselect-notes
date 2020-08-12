@@ -18,7 +18,10 @@ const exampleState = {
   }
 };
 
-const shopItemsSelector = (state) => state.shop.items;
+const shopItemsSelector = (state) => {
+  console.log('shop item selector call only once if state not changed');
+  return state.shop.items;;
+};
 const taxPercentSelector = (state) => state.shop.taxPercent;
 
 const subtotalSelector = createSelector(shopItemsSelector, (items) =>
@@ -45,7 +48,7 @@ console.log(totalSelector(exampleState)); // { total: 2.322 }
 console.log(myTotalWithoutReselect(exampleState)); // { total: 2.322 }
 
 
-const times = 10000000;
+const times = 10000;
 
 
 /**
